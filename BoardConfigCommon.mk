@@ -16,8 +16,7 @@
 
 TARGET_NO_BOOTLOADER := true
 # Use prebuilt kernel Image.gz and *.dtb
-# TODO: Runtime build support
-TARGET_NO_KERNEL := true
+# TODO: Runtime build kernel support
 TARGET_NO_RECOVERY := true
 
 # TODO: Support bluetooth HAL and prepare bluetooth firmware
@@ -55,3 +54,6 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION                     := current
 ######## End of Project Treble support ########
+
+# Kernel command line for booting. It will be appended to cmdline.txt
+BOARD_KERNEL_CMDLINE += console=ttyS0,115200 root=/dev/ram0 rootwait
