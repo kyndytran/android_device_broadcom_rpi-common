@@ -14,14 +14,10 @@
 #  limitations under the License.
 #
 
-include $(all-subdir-makefiles)
+on fs
+    mount_all /vendor/etc/fstab.${ro.hardware} --early
 
-PRODUCT_COPY_FILES += \
-    device/broadcom/rpi-common/fstab.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram.$(TARGET_PRODUCT) \
-    device/broadcom/rpi-common/fstab:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(TARGET_PRODUCT) \
-    device/broadcom/rpi-common/fstab:$(TARGET_COPY_OUT_RAMDISK)/fstab.$(TARGET_PRODUCT)
+on property:sys.boot_completed=1
+    # Zram swap
+    swapon_all /vendor/etc/fstab.zram.${ro.hardware}
 
-# Add common init rc file
-# TODO: Support USB init rc file
-PRODUCT_COPY_FILES += \
-    device/broadcom/rpi-common/init/init.rpi.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(TARGET_PRODUCT).rc

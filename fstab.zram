@@ -1,0 +1,2 @@
+# Zram swap (2GB)
+/dev/block/zram0                                             none            swap    defaults                              zramsize=2147483648

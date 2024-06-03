@@ -22,3 +22,7 @@ TARGET_NO_RECOVERY := true
 
 # TODO: Support bluetooth HAL and prepare bluetooth firmware
 BOARD_HAVE_BLUETOOTH := false
+
+TARGET_COPY_OUT_VENDOR := vendor
+# Use for loading fstab (fstab.${ro.boot.hardware}) and load *.so HALs and other similar purposes
+BOARD_KERNEL_CMDLINE += androidboot.hardware=$(TARGET_PRODUCT)
