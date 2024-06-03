@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compatibility-matrix version="1.0" type="device">
+    <hal>
+        <name>android.hidl.manager</name>
+        <version>1.2</version>
+        <interface>
+            <name>IServiceManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal>
+        <name>android.hidl.memory</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMapper</name>
+            <instance>ashmem</instance>
+        </interface>
+    </hal>
+    <hal>
+        <name>android.hidl.allocator</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAllocator</name>
+            <instance>ashmem</instance>
+        </interface>
+    </hal>
+    <vendor-ndk>
+        <version>34</version>
+    </vendor-ndk>
+    <system-sdk>
+        <version>34</version>
+    </system-sdk>
+</compatibility-matrix>

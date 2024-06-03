@@ -57,3 +57,7 @@ BOARD_VNDK_VERSION                     := current
 
 # Kernel command line for booting. It will be appended to cmdline.txt
 BOARD_KERNEL_CMDLINE += console=ttyS0,115200 root=/dev/ram0 rootwait
+
+# Vendor Interface Manifest
+DEVICE_MANIFEST_FILE                        := device/broadcom/rpi-common/manifest/manifest.xml
+DEVICE_MATRIX_FILE                          := device/broadcom/rpi-common/manifest/compatibility_matrix.xml
