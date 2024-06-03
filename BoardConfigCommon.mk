@@ -26,3 +26,23 @@ BOARD_HAVE_BLUETOOTH := false
 TARGET_COPY_OUT_VENDOR := vendor
 # Use for loading fstab (fstab.${ro.boot.hardware}) and load *.so HALs and other similar purposes
 BOARD_KERNEL_CMDLINE += androidboot.hardware=$(TARGET_PRODUCT)
+
+######## Parititions support ########
+BOARD_FLASH_BLOCK_SIZE := 4096
+# Filesystem type
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_USERIMAGES_USE_EXT4 := true
+
+# Partitions size - TODO: support dynamic partition
+BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728	# 128M
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648	# 2GB
+BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648	# 2GB
+# TODO: Adjust userdata partition size
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 134217728	# 128M
+
+# We don't support fastboot flashing now.
+# So sparse image is not needed now.
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+
+######## End of Parititions support ########
