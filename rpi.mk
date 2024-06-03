@@ -25,3 +25,6 @@ PRODUCT_COPY_FILES += \
 # TODO: Support USB init rc file
 PRODUCT_COPY_FILES += \
     device/broadcom/rpi-common/init/init.rpi.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(TARGET_PRODUCT).rc
+
+# Project Treble support
+PRODUCT_PACKAGES += vndk_package

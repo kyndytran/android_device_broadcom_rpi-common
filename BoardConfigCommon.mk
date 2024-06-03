@@ -46,3 +46,12 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 134217728	# 128M
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
 ######## End of Parititions support ########
+
+######## Project Treble support ########
+
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+# Properties that are set by PRODUCT_PROPERTY_OVERRIDES will be copied
+# to /vendor/build.prop
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+BOARD_VNDK_VERSION                     := current
+######## End of Project Treble support ########
