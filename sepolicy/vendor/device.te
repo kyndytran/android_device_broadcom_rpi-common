@@ -1,0 +1,2 @@
+# Vendor block device mounted on /vendor
+type vendor_block_device, dev_type;

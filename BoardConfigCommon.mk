@@ -61,3 +61,6 @@ BOARD_KERNEL_CMDLINE += console=ttyS0,115200 root=/dev/ram0 rootwait
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE                        := device/broadcom/rpi-common/manifest/manifest.xml
 DEVICE_MATRIX_FILE                          := device/broadcom/rpi-common/manifest/compatibility_matrix.xml
+
+# SELinux support
+BOARD_VENDOR_SEPOLICY_DIRS       += device/broadcom/rpi-common/sepolicy/vendor
