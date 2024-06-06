@@ -23,8 +23,6 @@ TARGET_NO_RECOVERY := true
 BOARD_HAVE_BLUETOOTH := false
 
 TARGET_COPY_OUT_VENDOR := vendor
-# Use for loading fstab (fstab.${ro.boot.hardware}) and load *.so HALs and other similar purposes
-BOARD_KERNEL_CMDLINE += androidboot.hardware=$(TARGET_PRODUCT)
 
 ######## Parititions support ########
 BOARD_FLASH_BLOCK_SIZE := 4096
@@ -57,6 +55,8 @@ BOARD_VNDK_VERSION                     := current
 
 # Kernel command line for booting. It will be appended to cmdline.txt
 BOARD_KERNEL_CMDLINE += console=ttyS0,115200 root=/dev/ram0 rootwait
+# Use for loading fstab (fstab.${ro.boot.hardware}) and load *.so HALs and other similar purposes
+BOARD_KERNEL_CMDLINE += androidboot.hardware=$(TARGET_PRODUCT)
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Vendor Interface Manifest

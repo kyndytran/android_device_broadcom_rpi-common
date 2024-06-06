@@ -14,12 +14,12 @@
 #  limitations under the License.
 #
 
-import /vendor/etc/init/hw/init.${ro.hardware}.usb.rc
+import /vendor/etc/init/hw/init.rpi4.usb.rc
 
 on fs
-    mount_all /vendor/etc/fstab.${ro.hardware} --early
+    mount_all /vendor/etc/fstab.rpi4
 
 on property:sys.boot_completed=1
     # Zram swap
-    swapon_all /vendor/etc/fstab.zram.${ro.hardware}
+    swapon_all /vendor/etc/fstab.zram.rpi4
 
