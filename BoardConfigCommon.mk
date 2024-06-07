@@ -58,6 +58,7 @@ BOARD_KERNEL_CMDLINE += console=ttyS0,115200 root=/dev/ram0 rootwait
 # Use for loading fstab (fstab.${ro.boot.hardware}) and load *.so HALs and other similar purposes
 BOARD_KERNEL_CMDLINE += androidboot.hardware=$(TARGET_PRODUCT)
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.serialno=RAndroid
 
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE                        := device/broadcom/rpi-common/manifest/manifest.xml
