@@ -65,3 +65,6 @@ DEVICE_MATRIX_FILE                          := device/broadcom/rpi-common/manife
 
 # SELinux support
 BOARD_VENDOR_SEPOLICY_DIRS       += device/broadcom/rpi-common/sepolicy/vendor
+
+# Overlay
+DEVICE_PACKAGE_OVERLAYS                     := device/broadcom/rpi-common/overlay
