@@ -34,3 +34,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Emulated Storage
 # https://source.android.com/docs/core/storage/sdcardfs-deprecate#configuring-sdcard-replacement-functionality
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+# Required apps to use for booting
+PRODUCT_PACKAGES += \
+    Launcher3QuickStep \
+    Settings \
+    StorageManager \
+    SystemUI \
+    LatinIME \
+    Provision
