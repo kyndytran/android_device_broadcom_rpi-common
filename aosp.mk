@@ -17,7 +17,8 @@
 # Include required AOSP packges/apps/settings
 # TODO: Support 32-bit arch/app (Use: core_64_bit.mk instead)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 
 # Update when configuring for Android TV, Automotive
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
