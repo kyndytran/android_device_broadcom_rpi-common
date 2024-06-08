@@ -46,3 +46,7 @@ include device/broadcom/rpi-common/camera.mk
 # Generic Keylayout
 PRODUCT_COPY_FILES += \
     device/broadcom/rpi-common/Generic.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Generic.kl
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    vendor/broadcom/proprietary/rpi4-kernel-prebuilt/Image:$(PRODUCT_OUT)/kernel
