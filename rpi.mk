@@ -39,3 +39,10 @@ include device/broadcom/rpi-common/permission.mk
 
 # Support Graphics and Display HAL
 include device/broadcom/rpi-common/graphics_display.mk
+
+# Handle camera support
+include device/broadcom/rpi-common/camera.mk
+
+# Generic Keylayout
+PRODUCT_COPY_FILES += \
+    device/broadcom/rpi-common/Generic.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Generic.kl
