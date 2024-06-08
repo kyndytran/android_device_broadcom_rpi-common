@@ -36,3 +36,6 @@ include device/broadcom/rpi-common/hal_generic.mk
 
 # Add Android permissions
 include device/broadcom/rpi-common/permission.mk
+
+# Support Graphics and Display HAL
+include device/broadcom/rpi-common/graphics_display.mk
