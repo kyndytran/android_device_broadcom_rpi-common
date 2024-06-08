@@ -26,3 +26,7 @@ PRODUCT_SHIPPING_API_LEVEL := 34
 
 # Dalvik heap configuration for board which has 4GB RAM or higher
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
+# Configure system to support APEX updates
+# https://source.android.com/docs/core/ota/apex#configuring-system-support-updates
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
