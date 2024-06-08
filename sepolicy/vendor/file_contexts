@@ -23,3 +23,6 @@
 
 # Power
 /vendor/bin/hw/android.hardware.power-service.example                                   u:object_r:hal_power_default_exec:s0
+
+# Thermal
+/vendor/bin/hw/android.hardware.thermal-service.example                                 u:object_r:hal_thermal_default_exec:s0

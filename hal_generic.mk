@@ -34,3 +34,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.example
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.example
