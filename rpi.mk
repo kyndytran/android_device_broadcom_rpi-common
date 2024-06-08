@@ -33,3 +33,6 @@ PRODUCT_PACKAGES += vndk_package
 
 # Support generic HALs
 include device/broadcom/rpi-common/hal_generic.mk
+
+# Add Android permissions
+include device/broadcom/rpi-common/permission.mk
