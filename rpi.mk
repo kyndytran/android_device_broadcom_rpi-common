@@ -50,3 +50,6 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_COPY_FILES += \
     vendor/broadcom/proprietary/rpi4-kernel-prebuilt/Image:$(PRODUCT_OUT)/kernel
+
+# Custom PHONY to create boot.img
+include device/broadcom/rpi-common/preparebootimg.mk
