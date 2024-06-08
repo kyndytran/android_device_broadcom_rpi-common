@@ -14,3 +14,9 @@
 # Health
 /vendor/bin/hw/android.hardware.health.storage-service.default                          u:object_r:hal_health_default_exec:s0
 /vendor/bin/hw/android.hardware.health-service.example                                  u:object_r:hal_health_default_exec:s0
+
+# Keymint
+/vendor/bin/hw/android.hardware.security.keymint-service                                u:object_r:hal_keymint_default_exec:s0
+
+# Gatekeeper
+/vendor/bin/hw/android.hardware.gatekeeper-service                                      u:object_r:hal_gatekeeper_default_exec:s0

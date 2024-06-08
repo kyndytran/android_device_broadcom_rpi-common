@@ -22,3 +22,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.example \
     android.hardware.health.storage-service.default
+
+# Software Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-service
+
+# Software Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper-service
