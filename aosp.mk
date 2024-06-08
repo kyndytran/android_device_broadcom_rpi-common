@@ -43,3 +43,10 @@ PRODUCT_PACKAGES += \
     SystemUI \
     LatinIME \
     Provision
+
+# Additional apps
+PRODUCT_PACKAGES += \
+    SettingsIntelligence \
+    Gallery2 \
+    Camera2 \
+    QuickSearchBox
