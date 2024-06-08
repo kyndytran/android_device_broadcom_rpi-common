@@ -20,3 +20,6 @@
 
 # Gatekeeper
 /vendor/bin/hw/android.hardware.gatekeeper-service                                      u:object_r:hal_gatekeeper_default_exec:s0
+
+# Power
+/vendor/bin/hw/android.hardware.power-service.example                                   u:object_r:hal_power_default_exec:s0

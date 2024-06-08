@@ -30,3 +30,7 @@ PRODUCT_PACKAGES += \
 # Software Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-service
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.example
