@@ -30,3 +30,6 @@ PRODUCT_COPY_FILES += \
 
 # Project Treble support
 PRODUCT_PACKAGES += vndk_package
+
+# Support generic HALs
+include device/broadcom/rpi-common/hal_generic.mk
