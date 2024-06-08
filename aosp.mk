@@ -30,3 +30,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Configure system to support APEX updates
 # https://source.android.com/docs/core/ota/apex#configuring-system-support-updates
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Emulated Storage
+# https://source.android.com/docs/core/storage/sdcardfs-deprecate#configuring-sdcard-replacement-functionality
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
