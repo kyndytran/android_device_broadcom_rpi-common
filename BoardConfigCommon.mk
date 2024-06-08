@@ -69,3 +69,8 @@ BOARD_VENDOR_SEPOLICY_DIRS       += device/broadcom/rpi-common/sepolicy/vendor
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS                     := device/broadcom/rpi-common/overlay
+
+# Adding properties to vendor.prop to have own properties
+# and have a chance to support Android GSI which overrides properties
+# in system partition.
+TARGET_VENDOR_PROP += device/broadcom/rpi-common/vendor.prop
