@@ -18,3 +18,7 @@
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm-service.widevine
+
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.example \
+    android.hardware.health.storage-service.default

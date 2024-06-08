@@ -10,3 +10,7 @@
 /vendor/bin/hw/android\.hardware\.drm-service\.widevine(.*)?                            u:object_r:hal_drm_widevine_exec:s0
 # data
 /data/vendor/mediadrm(/.*)?                                                             u:object_r:mediadrm_vendor_data_file:s0
+
+# Health
+/vendor/bin/hw/android.hardware.health.storage-service.default                          u:object_r:hal_health_default_exec:s0
+/vendor/bin/hw/android.hardware.health-service.example                                  u:object_r:hal_health_default_exec:s0
