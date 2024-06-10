@@ -47,3 +47,7 @@
 # Display HAL - hwcomposer3
 /vendor/bin/hw/android\.hardware\.graphics\.composer3-service\.ranchu                   u:object_r:hal_graphics_composer_default_exec:s0
 /dev/dri/card0                                                                          u:object_r:gpu_device:s0
+
+# Temp
+/vendor/bin/hw/android.hardware.usb-service.example                                     u:object_r:hal_usb_default_exec:s0
+/vendor/bin/hw/android.hardware.usb.gadget@1.2-rpi                                      u:object_r:hal_usb_gadget_default_exec:s0

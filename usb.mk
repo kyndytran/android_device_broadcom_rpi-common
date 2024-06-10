@@ -14,10 +14,7 @@
 #  limitations under the License.
 #
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
-    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.example \
+    android.hardware.usb.gadget@1.2-rpi

@@ -53,3 +53,6 @@ PRODUCT_COPY_FILES += \
 
 # Custom PHONY to create boot.img
 include device/broadcom/rpi-common/preparebootimg.mk
+
+# Support usbgadget HAL
+include device/broadcom/rpi-common/usb.mk
