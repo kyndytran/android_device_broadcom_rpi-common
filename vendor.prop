@@ -9,3 +9,10 @@ ro.vendor.hwcomposer.mode=client
 # camera
 config.disable_cameraservice=true
 media.settings.xml=/vendor/etc/media_profiles_V1_0.xml
+
+# Audio
+ro.config.media_vol_default=90
+ro.config.media_vol_steps=100
+ro.hardware.audio.tinyalsa.period_count=4
+ro.hardware.audio.tinyalsa.period_size_multiplier=2
+ro.hardware.audio.tinyalsa.host_latency_ms=80

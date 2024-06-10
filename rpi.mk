@@ -59,3 +59,6 @@ include device/broadcom/rpi-common/usb.mk
 
 # Support bluetooth HAL
 include device/broadcom/rpi-common/bluetooth.mk
+
+# Support audio HAL
+include device/broadcom/rpi-common/audio.mk
