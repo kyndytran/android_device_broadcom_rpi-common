@@ -56,3 +56,6 @@ include device/broadcom/rpi-common/preparebootimg.mk
 
 # Support usbgadget HAL
 include device/broadcom/rpi-common/usb.mk
+
+# Support bluetooth HAL
+include device/broadcom/rpi-common/bluetooth.mk

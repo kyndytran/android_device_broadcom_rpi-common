@@ -19,8 +19,10 @@ TARGET_NO_BOOTLOADER := true
 # TODO: Runtime build kernel support
 TARGET_NO_RECOVERY := true
 
-# TODO: Support bluetooth HAL and prepare bluetooth firmware
-BOARD_HAVE_BLUETOOTH := false
+# TODO: prepare bluetooth firmware
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/broadcom/rpi-common
 
 TARGET_COPY_OUT_VENDOR := vendor
 
