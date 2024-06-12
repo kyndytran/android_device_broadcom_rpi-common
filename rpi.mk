@@ -62,3 +62,8 @@ include device/broadcom/rpi-common/bluetooth.mk
 
 # Support audio HAL
 include device/broadcom/rpi-common/audio.mk
+
+# Wi-Fi
+include device/broadcom/rpi-common/wifi.mk
+# Wi-Fi firmware
+include vendor/broadcom/proprietary/firmware/brcm/firmware_broadcom.mk

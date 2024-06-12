@@ -61,6 +61,7 @@ BOARD_KERNEL_CMDLINE += console=ttyS0,115200 root=/dev/ram0 rootwait
 BOARD_KERNEL_CMDLINE += androidboot.hardware=$(TARGET_PRODUCT)
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.serialno=RAndroid
+BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/etc/firmware
 
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE                        := device/broadcom/rpi-common/manifest/manifest.xml
@@ -76,3 +77,13 @@ DEVICE_PACKAGE_OVERLAYS                     := device/broadcom/rpi-common/overla
 # and have a chance to support Android GSI which overrides properties
 # in system partition.
 TARGET_VENDOR_PROP += device/broadcom/rpi-common/vendor.prop
+
+# Wi-Fi
+BOARD_WLAN_DEVICE           := bcmdhd
+BOARD_HOSTAPD_DRIVER        := NL80211
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+# From hardware/broadcom/wlan
+BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_bcmdhd
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+WPA_SUPPLICANT_VERSION      := VER_0_8_X
+WIFI_DRIVER_MODULE_NAME     := $(BOARD_WLAN_DEVICE)

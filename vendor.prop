@@ -16,3 +16,6 @@ ro.config.media_vol_steps=100
 ro.hardware.audio.tinyalsa.period_count=4
 ro.hardware.audio.tinyalsa.period_size_multiplier=2
 ro.hardware.audio.tinyalsa.host_latency_ms=80
+
+# Wi-Fi
+wifi.interface=wlan0
