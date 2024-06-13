@@ -19,3 +19,8 @@ ro.hardware.audio.tinyalsa.host_latency_ms=80
 
 # Wi-Fi
 wifi.interface=wlan0
+
+# Codec
+# Force using DMABUFHEAP
+# Fix can't use codec2 to play audio
+debug.c2.use_dmabufheaps=1
