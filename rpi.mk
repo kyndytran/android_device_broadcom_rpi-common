@@ -67,3 +67,6 @@ include device/broadcom/rpi-common/audio.mk
 include device/broadcom/rpi-common/wifi.mk
 # Wi-Fi firmware
 include vendor/broadcom/proprietary/firmware/brcm/firmware_broadcom.mk
+
+# Gnss/Gps
+include device/broadcom/rpi-common/gnss.mk
