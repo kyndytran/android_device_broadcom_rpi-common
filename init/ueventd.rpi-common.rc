@@ -4,3 +4,5 @@
 /dev/graphics/fb0                                   0666    system          graphics
 /dev/video*                                         0666    system          camera
 /sys/class/udc/fe980000.usb/current_speed           0666    system          system
+/dev/ttyUSB0                                        0777    system          system
+/dev/ttyUSB1                                        0777    system          system
