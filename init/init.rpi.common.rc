@@ -14,10 +14,10 @@
 #  limitations under the License.
 #
 
-import /vendor/etc/init/hw/init.rpi4.usb.rc
+import /vendor/etc/init/hw/init.${ro.hardware}.usb.rc
 
 on fs
-    mount_all /vendor/etc/fstab.rpi4
+    mount_all /vendor/etc/fstab.${ro.hardware}
 
 on post-fs-data
     # Create the directories used by the Wireless subsystem
@@ -34,5 +34,5 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant -Dnl80211 -iwlan0 -c/vendor
 
 on property:sys.boot_completed=1
     # Zram swap
-    swapon_all /vendor/etc/fstab.zram.rpi4
+    swapon_all /vendor/etc/fstab.zram.${ro.hardware}
 
