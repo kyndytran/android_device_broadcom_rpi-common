@@ -16,6 +16,11 @@
 
 import /vendor/etc/init/hw/init.${ro.hardware}.usb.rc
 
+on early-init
+    # Grant permission for Bluetooth rfkill
+    chmod 0666 /sys/class/rfkill/rfkill0/type
+    chmod 0666 /sys/class/rfkill/rfkill0/state
+
 on fs
     mount_all /vendor/etc/fstab.${ro.hardware}
 
