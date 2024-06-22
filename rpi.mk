@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
 # TODO: Support USB init rc file
 PRODUCT_COPY_FILES += \
     device/broadcom/rpi-common/init/init.rpi.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(TARGET_PRODUCT).rc \
-    device/broadcom/rpi-common/init/ueventd.rpi-common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.$(TARGET_PRODUCT).rc \
+    device/broadcom/rpi-common/init/ueventd.rpi-common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     device/broadcom/rpi-common/init/init.rpi.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(TARGET_PRODUCT).usb.rc
 
 # Project Treble support
