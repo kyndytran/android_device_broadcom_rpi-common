@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl.rpi \
     android.hardware.audio.effect@7.0-impl
 
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+    audio.bluetooth.default
+
 # Audio policy configuration
 PRODUCT_COPY_FILES += \
     device/generic/goldfish/audio/policy/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
