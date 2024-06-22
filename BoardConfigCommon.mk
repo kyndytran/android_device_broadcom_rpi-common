@@ -78,6 +78,10 @@ DEVICE_PACKAGE_OVERLAYS                     := device/broadcom/rpi-common/overla
 # in system partition.
 TARGET_VENDOR_PROP += device/broadcom/rpi-common/vendor.prop
 
+# Bluetooth properties should be added separately
+# TODO: Configure different bluetooth properties for Android Automotive/Car
+TARGET_VENDOR_PROP += device/broadcom/rpi-common/bluetooth.prop
+
 # Wi-Fi
 BOARD_WLAN_DEVICE           := bcmdhd
 BOARD_HOSTAPD_DRIVER        := NL80211
