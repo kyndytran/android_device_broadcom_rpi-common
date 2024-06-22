@@ -27,4 +27,7 @@
     <!-- Default for Settings.Secure.USER_SETUP_COMPLETE -->
     <bool name="def_user_setup_complete">true</bool>
 
+    <!-- Do NOT lock the screen -->
+    <bool name="def_lockscreen_disabled">true</bool>
+
 </resources>
