@@ -18,6 +18,9 @@
 BOARD_MESA3D_USES_MESON_BUILD := true
 BOARD_MESA3D_GALLIUM_DRIVERS := vc4 v3d
 BOARD_MESA3D_BUILD_LIBGBM := true
+BOARD_MESA3D_VULKAN_DRIVERS := broadcom
+# Enable Vulkan backend for SKIA/HWUI
+TARGET_USES_VULKAN = true
 
 PRODUCT_PACKAGES += \
     libEGL_mesa \
@@ -25,6 +28,10 @@ PRODUCT_PACKAGES += \
     libGLESv2_mesa \
     libgallium_dri \
     libglapi
+
+# Vulkan
+PRODUCT_PACKAGES += \
+    vulkan.broadcom
 
 # Allocator/Mapper 4.0 from external/minigbm
 # TODO: Support dmabuf allocator/mapper 4.0 which directly uses
