@@ -4,6 +4,10 @@ ro.hardware.egl=mesa
 ro.opengles.version=196609
 # Vulkan
 ro.hardware.vulkan=broadcom
+# Set default renderer
+## skiagl: Use OpenGL ES
+## skiavk: Use Vulkan
+debug.hwui.renderer=skiavk
 # hwc3
 ro.vendor.hwcomposer.display_finder_mode=drm
 ro.vendor.hwcomposer.mode=client
