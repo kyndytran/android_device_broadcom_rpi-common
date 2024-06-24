@@ -32,8 +32,7 @@ wifi.interface=wlan0
 debug.c2.use_dmabufheaps=1
 
 # Gnss/Gps
-# TODO: Update if ttyUSB0 is not GPS device
-ro.kernel.android.gps=ttyUSB0
+ro.kernel.android.gps=ttyACM0
 ro.kernel.android.gpsttybaud=115200
 ro.factory.hasGPS=true
 ro.hardware.gps=hikey960
