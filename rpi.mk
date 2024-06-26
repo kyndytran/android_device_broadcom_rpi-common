@@ -70,3 +70,7 @@ include vendor/broadcom/proprietary/firmware/brcm/firmware_broadcom.mk
 
 # Gnss/Gps
 include device/broadcom/rpi-common/gnss.mk
+
+# codec
+# Initial support: software level
+include device/broadcom/rpi-common/codec.mk
