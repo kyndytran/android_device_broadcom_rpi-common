@@ -50,4 +50,5 @@ PRODUCT_PACKAGES += \
     SettingsIntelligence \
     Gallery2 \
     Camera2 \
+    Browser2 \
     QuickSearchBox
