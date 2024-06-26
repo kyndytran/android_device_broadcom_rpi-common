@@ -36,3 +36,9 @@ ro.kernel.android.gps=ttyACM0
 ro.kernel.android.gpsttybaud=115200
 ro.factory.hasGPS=true
 ro.hardware.gps=hikey960
+
+# Codecs
+#  1 (-1) - Hardware Codec2.0
+#  2      - OMX
+#  4      - Software Codec2.0
+debug.stagefright.c2inputsurface=4
