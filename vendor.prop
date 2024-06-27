@@ -31,12 +31,6 @@ wifi.interface=wlan0
 # Fix can't use codec2 to play audio
 debug.c2.use_dmabufheaps=1
 
-# Gnss/Gps
-ro.kernel.android.gps=ttyACM0
-ro.kernel.android.gpsttybaud=115200
-ro.factory.hasGPS=true
-ro.hardware.gps=hikey960
-
 # Codecs
 #  1 (-1) - Hardware Codec2.0
 #  2      - OMX
