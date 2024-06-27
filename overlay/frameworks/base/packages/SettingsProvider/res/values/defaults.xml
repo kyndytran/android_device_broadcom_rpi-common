@@ -26,4 +26,8 @@
     <!-- Default for Settings.Secure.USER_SETUP_COMPLETE -->
     <bool name="def_user_setup_complete">true</bool>
 
+    <!-- Enable/Disable location by default -->
+    <!-- 0 == off, 3 == on -->
+    <integer name="def_location_mode">0</integer>
+
 </resources>
