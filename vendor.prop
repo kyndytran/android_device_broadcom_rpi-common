@@ -39,3 +39,21 @@ debug.stagefright.c2inputsurface=4
 
 # Disable lockscreen by default
 ro.lockscreen.disable.default=true
+
+# ART - Improve boot time
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.boot-dex2oat-threads=4
+dalvik.vm.dex2oat-cpu-set=0,1,2,3
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.image-dex2oat-threads=4
+dalvik.vm.restore-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.restore-dex2oat-threads=4
+dalvik.vm.dex2oat-filter=speed-profile
+dalvik.vm.image-dex2oat-filter=speed-profile
+dalvik.vm.dex2oat-minidebuginfo=false
+dalvik.vm.minidebuginfo=false
+
+# Disable bootanimation
+debug.sf.nobootanimation=1
