@@ -36,3 +36,6 @@ debug.c2.use_dmabufheaps=1
 #  2      - OMX
 #  4      - Software Codec2.0
 debug.stagefright.c2inputsurface=4
+
+# Disable lockscreen by default
+ro.lockscreen.disable.default=true
