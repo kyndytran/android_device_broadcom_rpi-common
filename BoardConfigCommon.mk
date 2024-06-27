@@ -62,6 +62,7 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=$(TARGET_PRODUCT)
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.serialno=RAndroid
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/etc/firmware
+BOARD_KERNEL_CMDLINE += loglevel=0
 
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE                        := device/broadcom/rpi-common/manifest/manifest.xml
