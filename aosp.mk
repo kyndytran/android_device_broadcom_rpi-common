@@ -42,7 +42,6 @@ PRODUCT_PACKAGES += \
     TvSettingsTwoPanel \
     StorageManager \
     SystemUI \
-    LatinIME \
     Provision
 
 # Additional apps
@@ -50,5 +49,4 @@ PRODUCT_PACKAGES += \
     SettingsIntelligence \
     Gallery2 \
     Camera2 \
-    Browser2 \
-    QuickSearchBox
+    Browser2
