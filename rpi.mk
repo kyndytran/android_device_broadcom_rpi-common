@@ -65,8 +65,6 @@ include device/broadcom/rpi-common/audio.mk
 
 # Wi-Fi
 include device/broadcom/rpi-common/wifi.mk
-# Wi-Fi firmware
-include vendor/broadcom/proprietary/firmware/brcm/firmware_broadcom.mk
 
 # codec
 # Initial support: software level
